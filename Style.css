@@ -1,0 +1,195 @@
+<style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 450px;
+            width: 100%;
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #2575fc;
+            color: #fff;
+            padding: 12px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1d5bb9;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #2575fc;
+        }
+
+        #quiz-container div {
+            background-color: #f9f9f9;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #quiz-container input[type="radio"] {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        #quiz-container label {
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #score {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .passed {
+            color: #28a745;
+        }
+
+        .failed {
+            color: #dc3545;
+        }
+
+        .back-button {
+            background-color: #ddd;
+            color: #333;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #bbb;
+        }
+
+        #quiz-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #quiz-container div {
+            background-color: #e8e8e8;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .comments-section {
+            margin-top: 20px;
+        }
+
+        .comment-box {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .report-section {
+            margin-top: 20px;
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .report-button {
+            background-color: #f5a623;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .report-button:hover {
+            background-color: #e08420;
+        }
+
+        .comment-reply {
+            background-color: #d1e8fd;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        #report-result {
+    background-color: #f9f9f9;  /* Light background for better contrast */
+    color: #333;                /* Dark text color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+    </style>
